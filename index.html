@@ -223,17 +223,25 @@
             </div>
           </div>
           <div class="right-contact">
+            <!--  
+              we got a problem here, the form is not working, i think we need to use something diffreent for this, i will try to fix it later yetkin
+             -->
             <form action="#">
-              <label for="name">First Name <span class="red">*</span></label>
-              <input type="text" name="name" placeholder="Your Name">
-              <label for="surname">Last Name <span class="red">*</span> </label>
-              <input type="text" name="surname" placeholder="Your Surname">
-              <label for="email"></label>
-              <input type="email" name="email" placeholder="Your Email">
-              <label for="subject"></label>
-              <input type="text" name="subject" placeholder="Your Subject">
-              <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-              <input type="submit" value="Send Message">
+              <div class="upform">
+                <label for="name">First Name<span class="red">*</span></label>
+                <input type="text" name="name" placeholder="Your Name">
+                <label for="surname">Last Name <span class="red">*</span> </label>
+                <input type="text" name="surname" placeholder="Your Surname">
+              </div>
+              <div class="midform">
+                <label for="email">E-mail <span class="red">*</span></label>
+                <input type="email" name="email" placeholder="Your Email">
+                <label for="subject">Subject <span class="red">*</span></label>
+                <input type="text" name="subject" placeholder="Your Subject"></div>
+              <div class="downform">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message">
+              </div>
             </form>
           </div>
         </article>
