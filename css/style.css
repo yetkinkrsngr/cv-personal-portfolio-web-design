@@ -372,6 +372,47 @@ nav {
   background-position: center;
   margin: 20px;
 }
+.carosel-block {
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+}
+.carosel-slider {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-slide img {
+  height: auto;
+}
+#prevBtn {
+  position: absolute;
+  border: none;
+  margin: 10px;
+  background-color: transparent;
+  top: 40%;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#prevBtn:active {
+  transform: scale(20);
+}
+#nextBtn {
+  position: absolute;
+  border: none;
+  margin: 10px;
+  background-color: transparent;
+  left: 95%;
+  top: 40%;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#nextBtn:active {
+  transform: scale(20);
+}
 @media (max-width: 500px) {
   nav {
     padding: 10px;
