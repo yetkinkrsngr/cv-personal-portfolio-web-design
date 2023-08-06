@@ -295,13 +295,12 @@ nav {
 }
 .port-left {
   padding: 20px;
-  border: 1px solid red;
+
   width: 100%;
 }
 .port-right {
   padding: 20px;
   width: 100%;
-  border: 1px solid blue;
 }
 .port-left-content h2 {
   color: var(--primary, #f0a500);
@@ -470,7 +469,7 @@ nav {
   .play-box {
     width: 250px;
     height: 250px;
-    left: 150px;
+    left: 80px;
   }
   .hero-left-side-details {
     display: flex;
@@ -478,10 +477,24 @@ nav {
     justify-content: center;
     align-items: center;
   }
+  .hero-right-side-details h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
   .hero-block {
-    border: 1px solid red;
-    margin-top: 80%;
+    margin-top: 105%;
     width: 100%;
+  }
+  .list-side {
+    gap: 20px;
+  }
+  .list-side ul li {
+    padding: 5px;
+  }
+  .list-side ul li span {
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-top: 10px;
   }
   .up-side p {
     width: 100%;
@@ -498,7 +511,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 330px;
+    margin-top: 120%;
     text-align: center;
   }
   .port-right {
@@ -513,5 +526,26 @@ nav {
   }
   .port-right {
     gap: 0;
+  }
+  .port-left-content {
+    margin-top: -150px;
+  }
+  .port-left-content h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .port-left-content p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .content-rate {
+    justify-content: center;
+    align-items: center;
+  }
+  .content-rate div {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
