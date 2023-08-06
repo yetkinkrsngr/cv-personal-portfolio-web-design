@@ -410,8 +410,81 @@ nav {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+.mbl-header {
+  display: none;
+}
 #nextBtn:active {
   transform: scale(20);
+}
+.contact-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.left-contact {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid blue;
+}
+.get-in-touch {
+  color: var(--primary, #f0a500);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+.get-in-touch-header {
+  color: var(--heading-color, #000);
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 4.0625rem;
+  margin-top: 20px;
+}
+.get-in-touch-p {
+  color: var(--paragraph-color, #6e6e6e);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+.contact-left-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.right-contact {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid red;
+}
+.mini-card {
+  padding: 20px;
+}
+.mini-card i,
+.mini-card h2,
+.mini-cardp {
+  margin-top: 20px;
+}
+.mini-card h2 {
+  color: var(--heading-color, #000);
+  font-family: Inter;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.8125rem;
+}
+.mini-card p {
+  color: var(--paragraph-color, #6e6e6e);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-top: 20px;
 }
 @media (max-width: 500px) {
   nav {
@@ -552,12 +625,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 120%;
+    margin-top: 20%;
     text-align: center;
   }
   .port-right {
     width: 100%;
     flex-direction: column;
+    display: none;
   }
   .port-right-card {
     margin-bottom: -50px;
@@ -588,5 +662,22 @@ nav {
     margin: 0 auto;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .carosel-slider {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  #prevBtn,
+  #nextBtn {
+    display: none;
+  }
+  .mbl-header {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #f0a500;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 }
