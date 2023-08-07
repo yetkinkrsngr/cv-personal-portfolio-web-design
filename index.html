@@ -227,25 +227,76 @@
               we got a problem here, the form is not working, i think we need to use something diffreent for this, i will try to fix it later yetkin
              -->
             <form action="#">
-              <div class="upform">
-                <label for="name">First Name<span class="red">*</span></label>
-                <input type="text" name="name" placeholder="Your Name">
-                <label for="surname">Last Name <span class="red">*</span> </label>
-                <input type="text" name="surname" placeholder="Your Surname">
+              <div class="text-from">
+                <label for="name">First Name <span class="red">*</span></label>
+                <label for="surname">Last Name <span class="red">*</span></label>
               </div>
-              <div class="midform">
-                <label for="email">E-mail <span class="red">*</span></label>
-                <input type="email" name="email" placeholder="Your Email">
-                <label for="subject">Subject <span class="red">*</span></label>
-                <input type="text" name="subject" placeholder="Your Subject"></div>
-              <div class="downform">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message">
+              <div class="text-input">
+                <input type="text" placeholder="First Name" id="name">
+                <input type="text" placeholder="Last Name" form="surname">
+              </div>
+              <div class="text-from">
+                <label for="Email">Email <span class="red">*</span></label>
+                <label for="Subject" style="margin-left: 45px;
+                ">Subject<span class="red">*</span></label>
+              </div>
+              <div class="text-input">
+                <input type="text" placeholder="Email" id="Email">
+                <input type="text" placeholder="Subject" form="Subject">
+              </div>
+              <div class="text-from">
+                <label for="textarea">Message <span class="red">*</span></label>
+              </div>
+              <div class="textarea">
+              <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your Massage Here..."></textarea>
+              <button class="btn-golden" style="margin-top: 60px;"> Send</button>
               </div>
             </form>
           </div>
         </article>
+        <article class="map-info">
+          <img src="images/b66cfb4ae341b09b0680651833516f48.png" alt="">
+        </article>
       </section>
+      <footer>
+        <article>
+          <a href="#">
+            <img src="images/logo.svg" alt="">
+
+          </a>
+          <p>Ceve - Creative Landing Page Figma Template for Build Amazing Website For Your Many Projects.</p>
+        </article>
+        <article>
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact </a></li>
+          </ul>
+        </article>
+        <article>
+          <h2>Services</h2>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </article>
+        <article>
+          <h2>Subscribe Newslater</h2>
+          <form action="#">
+            <label for="emailfo">Email <span class="red">*</span></label>
+            <br>
+            <br>
+            <input type="text" id="emailfo" placeholder="Enter Your Email">
+            <br>
+            <br>
+            <button class="btn-golden">Subscribe</button>
+          </form>
+        </article>
+      </footer>
     </main>
     <script src="js/app.js"></script>
   </body>
